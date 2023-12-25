@@ -1,0 +1,5 @@
+# the generated site itself
+/site
+
+# good ol node modules
+/node_modules
