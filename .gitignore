@@ -1,4 +1,5 @@
 # the generated site itself
+# should in theory not be committed, but CBNR's toast isn't ready yet
 /site
 
 # good ol node modules
