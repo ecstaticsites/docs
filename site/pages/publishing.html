@@ -1,0 +1,381 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Publishing to a Site · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="analytics.html" />
+    
+    
+    <link rel="prev" href="creating.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="technical.html">
+            
+                <a href="technical.html">
+            
+                    
+                    Technical Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="creating.html">
+            
+                <a href="creating.html">
+            
+                    
+                    Creating a New Site
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="publishing.html">
+            
+                <a href="publishing.html">
+            
+                    
+                    Publishing to a Site
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="analytics.html">
+            
+                <a href="analytics.html">
+            
+                    
+                    Viewing Site Analytics
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="paq.html">
+            
+                <a href="paq.html">
+            
+                    
+                    Potentially Asked Questions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="policy.html">
+            
+                <a href="policy.html">
+            
+                    
+                    Acceptable Use
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Publishing to a Site</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="publishing-to-a-site">Publishing to a Site</h1>
+<p>Publication to an existing site is handled on the command line, using <code>git</code>.</p>
+<p>If you haven&apos;t created a site yet, see <a href="creating.html">Creating a New Site</a> instead!</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>To begin, you&apos;ll want to make sure you have the program <code>git</code> installed on your computer. Depending on your operating system, you may have this installed already -- most Linux and MacOS systems come with it. If you need to install it, you can download a copy on the <a href="https://git-scm.com/downloads" target="_blank">official Git website</a>.</p>
+<p>In addition, you&apos;ll also need the ID of the site you want to update. This can be found on the &quot;Settings&quot; page for the site in question, in the sidebar of the CBNR web app.</p>
+<h3 id="add-a-git-remote">Add a Git Remote</h3>
+<p>From there, all you need is a Git repository with CBNR added as a remote.</p>
+<p>You might already be using Git to version-control your website, in which case, great! If not, it&apos;s a great idea to start doing so even disregarding CBNR entirely. To get started, go ahead and read a simple &quot;getting started with Git&quot; guide like <a href="https://www.garyrobinson.net/2014/10/git-in-two-minutes-for-a-solo-developer.html" target="_blank">this one</a> to get a repository set up.</p>
+<p>Then, run the following command to add CBNR as a &quot;remote&quot; of your Git repository:</p>
+<pre><code class="lang-sh"><span class="hljs-comment"># replace &quot;abc-def-ghi&quot; below with your site ID</span>
+git remote add cbnr https://git.cbnr.xyz/abc-def-ghi
+</code></pre>
+<p>And you&apos;re all set! This adds CBNR as a &quot;push target&quot; of your Git repository, so it&apos;ll be easy to publish updates to your site in the same way as you handle your version control.</p>
+<h3 id="git-push">Git Push</h3>
+<p>After the above one-time step, all you need to do to publish an update is push, like this:</p>
+<pre><code class="lang-sh"><span class="hljs-comment"># below assumes &quot;main&quot; is your default branch</span>
+git push cbnr main
+</code></pre>
+<p>Then, you&apos;ll see your files packaged up and uploaded to CBNR, and lines printed in your terminal (the ones which have <code>remote:</code> at the front) will show the progress of those files being uploaded to the CDN which serves your site.</p>
+<p>At that point, you can visit your site&apos;s URL in a browser to see your changes live on the web! You may need to do a hard-refresh to get what you expect.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="creating.html" class="navigation navigation-prev " aria-label="Previous page: Creating a New Site">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="analytics.html" class="navigation navigation-next " aria-label="Next page: Viewing Site Analytics">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Publishing to a Site","level":"2.2","depth":1,"next":{"title":"Viewing Site Analytics","level":"2.3","depth":1,"path":"pages/analytics.md","ref":"pages/analytics.md","articles":[]},"previous":{"title":"Creating a New Site","level":"2.1","depth":1,"path":"pages/creating.md","ref":"pages/creating.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pages/publishing.md","mtime":"1970-01-01T00:00:00.000Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2024-01-01T18:23:47.621Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
