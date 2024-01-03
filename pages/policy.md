@@ -9,6 +9,6 @@ The need for this stems from the following facts:
 
 So, for now, I'm going to put a link here to Bunny's Acceptable Use Policy, tell you to read that, and say the policy of CBNR is the same! This is subject to change but seems like a good starting point.
 
-[Bunny CDN Acceptable Use Policy](foo)
+[Bunny CDN Acceptable Use Policy](https://bunny.net/acceptable-use/)
 
 If you attempt to publish a site using CBNR which is in violation of this policy, please expect it to be taken down.
