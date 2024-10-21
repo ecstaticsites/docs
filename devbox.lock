@@ -1,68 +1,67 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "nodejs-slim@22": {
+    "nodejs@20": {
       "last_modified": "2024-10-13T23:44:06Z",
-      "plugin_version": "0.0.2",
-      "resolved": "github:NixOS/nixpkgs/d4f247e89f6e10120f911e2e2d2254a050d0f732#nodejs-slim_22",
+      "resolved": "github:NixOS/nixpkgs/d4f247e89f6e10120f911e2e2d2254a050d0f732#nodejs_20",
       "source": "devbox-search",
-      "version": "22.9.0",
+      "version": "20.17.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/pk6izbvmg9m3l8w7nkij4b94yxfpl997-nodejs-slim-22.9.0",
+              "path": "/nix/store/fkapwdcjn9fm1n071jv7a75cw66x4wq7-nodejs-20.17.0",
               "default": true
             },
             {
               "name": "libv8",
-              "path": "/nix/store/1ylgpm7wb349kd4ik3x80vf7b7i52rza-nodejs-slim-22.9.0-libv8"
+              "path": "/nix/store/17gly8aw2qa535bw1014xbc264v496g1-nodejs-20.17.0-libv8"
             }
           ],
-          "store_path": "/nix/store/pk6izbvmg9m3l8w7nkij4b94yxfpl997-nodejs-slim-22.9.0"
+          "store_path": "/nix/store/fkapwdcjn9fm1n071jv7a75cw66x4wq7-nodejs-20.17.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/cjrzb7xmllzvml680bf892al00gqqgrz-nodejs-slim-22.9.0",
+              "path": "/nix/store/icf1zdxjpik986hqwa9vj33zk9ir5r7h-nodejs-20.17.0",
               "default": true
             },
             {
               "name": "libv8",
-              "path": "/nix/store/vrqy3gj4hiic6qvlwk4jsmlgimhp1m3n-nodejs-slim-22.9.0-libv8"
+              "path": "/nix/store/yqira4250smxxpnxg3jc7r1csrsdz9yx-nodejs-20.17.0-libv8"
             }
           ],
-          "store_path": "/nix/store/cjrzb7xmllzvml680bf892al00gqqgrz-nodejs-slim-22.9.0"
+          "store_path": "/nix/store/icf1zdxjpik986hqwa9vj33zk9ir5r7h-nodejs-20.17.0"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/x3anqfq5wlc5cwblcajing0r5whgyksl-nodejs-slim-22.9.0",
+              "path": "/nix/store/pfg4yz6c5kvk8wp29kvp56dl0yjahwgn-nodejs-20.17.0",
               "default": true
             },
             {
               "name": "libv8",
-              "path": "/nix/store/jny2cjpk6n2riizjyxrfccc69ypwhhrz-nodejs-slim-22.9.0-libv8"
+              "path": "/nix/store/qm9202yha093jx33jkgxv2ra6yzgw6d2-nodejs-20.17.0-libv8"
             }
           ],
-          "store_path": "/nix/store/x3anqfq5wlc5cwblcajing0r5whgyksl-nodejs-slim-22.9.0"
+          "store_path": "/nix/store/pfg4yz6c5kvk8wp29kvp56dl0yjahwgn-nodejs-20.17.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/333h902ma4304hclb49jjgxb11x5xcyr-nodejs-slim-22.9.0",
+              "path": "/nix/store/dcdc33kdjdhjnzg6rkmd0cx4kpwl8cac-nodejs-20.17.0",
               "default": true
             },
             {
               "name": "libv8",
-              "path": "/nix/store/9kq0ghqkrkgmwqq2dcwy7fzla2gxk544-nodejs-slim-22.9.0-libv8"
+              "path": "/nix/store/bv92rqliq5vnpwa2pwsdiphz48j87l47-nodejs-20.17.0-libv8"
             }
           ],
-          "store_path": "/nix/store/333h902ma4304hclb49jjgxb11x5xcyr-nodejs-slim-22.9.0"
+          "store_path": "/nix/store/dcdc33kdjdhjnzg6rkmd0cx4kpwl8cac-nodejs-20.17.0"
         }
       }
     }
