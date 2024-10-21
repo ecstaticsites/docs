@@ -3,7 +3,7 @@
   "packages": ["nodejs-slim@22"],
   "shell": {
     "scripts": {
-      "deps": ["npm install"],
+      "install": ["npm install"],
       "build": ["npx honkit build . site"],
       "dev": ["npx honkit serve . site"],
     },
