@@ -243,22 +243,22 @@
 <p>If you haven&apos;t created a site yet, see <a href="creating.html">Creating a New Site</a> instead!</p>
 <h3 id="prerequisites">Prerequisites</h3>
 <p>To begin, you&apos;ll want to make sure you have the program <code>git</code> installed on your computer. Depending on your operating system, you may have this installed already -- most Linux and MacOS systems come with it. If you need to install it, you can download a copy on the <a href="https://git-scm.com/downloads" target="_blank">official Git website</a>.</p>
-<p>In addition, you&apos;ll also need the ID of the site you want to update. This can be found on the &quot;Settings&quot; page for the site in question, in the sidebar of the CBNR web app.</p>
+<p>In addition, you&apos;ll also need the ID of the site you want to update. This can be found on the &quot;Settings&quot; page for the site in question, in the sidebar of the Ecstatic web app.</p>
 <h3 id="add-a-git-remote">Add a Git Remote</h3>
-<p>From there, all you need is a Git repository with CBNR added as a remote.</p>
-<p>You might already be using Git to version-control your website, in which case, great! If not, it&apos;s a great idea to start doing so even disregarding CBNR entirely. To get started, go ahead and read a simple &quot;getting started with Git&quot; guide like <a href="https://www.garyrobinson.net/2014/10/git-in-two-minutes-for-a-solo-developer.html" target="_blank">this one</a> to get a repository set up.</p>
-<p>Then, run the following command to add CBNR as a &quot;remote&quot; of your Git repository:</p>
-<pre><code class="lang-sh"><span class="hljs-comment"># replace &quot;abc-def-ghi&quot; below with your site ID</span>
-git remote add cbnr https://git.cbnr.xyz/abc-def-ghi
+<p>From there, all you need is a Git repository with Ecstatic added as a remote.</p>
+<p>You might already be using Git to version-control your website, in which case, great! If not, it&apos;s a great idea to start doing so (even disregarding Ecstatic). To get started, go ahead and read a simple &quot;getting started with Git&quot; guide like <a href="https://www.garyrobinson.net/2014/10/git-in-two-minutes-for-a-solo-developer.html" target="_blank">this one</a> to get a repository set up.</p>
+<p>Then, run the following command to add Ecstatic as a &quot;remote&quot; of your Git repository:</p>
+<pre><code class="lang-sh"><span class="hljs-comment"># replace &quot;bala-dori-nuge&quot; below with your site ID</span>
+git remote add ecstatic https://git.ecstaticsites.org/bala-dori-nuge
 </code></pre>
-<p>And you&apos;re all set! This adds CBNR as a &quot;push target&quot; of your Git repository, so it&apos;ll be easy to publish updates to your site in the same way as you handle your version control.</p>
+<p>And you&apos;re all set! This adds Ecstatic as a &quot;push target&quot; of your Git repository, so it&apos;ll be easy to publish updates to your site in the same way as you handle your version control.</p>
 <h3 id="git-push">Git Push</h3>
 <p>After the above one-time step, all you need to do to publish an update is push, like this:</p>
 <pre><code class="lang-sh"><span class="hljs-comment"># below assumes &quot;main&quot; is your default branch</span>
-git push cbnr main
+git push ecstatic main
 </code></pre>
-<p>Then, you&apos;ll see your files packaged up and uploaded to CBNR, and lines printed in your terminal (the ones which have <code>remote:</code> at the front) will show the progress of those files being uploaded to the CDN which serves your site.</p>
-<p>At that point, you can visit your site&apos;s URL in a browser to see your changes live on the web! You may need to do a hard-refresh to get what you expect.</p>
+<p>Then, you&apos;ll see your files packaged up and uploaded to Ecstatic, and lines printed in your terminal (the ones which have <code>remote:</code> at the front) will show the progress of those files being uploaded to the CDN which serves your site.</p>
+<p>At that point, you can visit your site&apos;s URL in a browser to see your changes live on the web! You may need to do a hard-refresh to see what you expect.</p>
 
                                 
                                 </section>
@@ -302,7 +302,7 @@ git push cbnr main
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Publishing to a Site","level":"2.2","depth":1,"next":{"title":"Viewing Site Analytics","level":"2.3","depth":1,"path":"pages/analytics.md","ref":"pages/analytics.md","articles":[]},"previous":{"title":"Creating a New Site","level":"2.1","depth":1,"path":"pages/creating.md","ref":"pages/creating.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pages/publishing.md","mtime":"2023-12-25T20:29:37.816Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2024-01-03T14:51:12.486Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Publishing to a Site","level":"2.2","depth":1,"next":{"title":"Viewing Site Analytics","level":"2.3","depth":1,"path":"pages/analytics.md","ref":"pages/analytics.md","articles":[]},"previous":{"title":"Creating a New Site","level":"2.1","depth":1,"path":"pages/creating.md","ref":"pages/creating.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pages/publishing.md","mtime":"2024-10-21T20:42:23.880Z","type":"markdown"},"gitbook":{"version":"5.1.1","time":"2024-10-21T20:42:53.674Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -354,10 +354,6 @@ git push cbnr main
     </script>
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
