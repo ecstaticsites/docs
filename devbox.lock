@@ -3,6 +3,7 @@
   "packages": {
     "nodejs@20": {
       "last_modified": "2024-10-13T23:44:06Z",
+      "plugin_version": "0.0.2",
       "resolved": "github:NixOS/nixpkgs/d4f247e89f6e10120f911e2e2d2254a050d0f732#nodejs_20",
       "source": "devbox-search",
       "version": "20.17.0",

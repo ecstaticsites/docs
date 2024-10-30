@@ -1,8 +1,8 @@
-# Creating a New Site
+# 1 - Creating a Site
 
 Site creation is handled via the Ecstatic web interface located at `app.ecstaticsites.org`.
 
-If you've already created a site, see [Publishing to a Site](./publishing.md) instead!
+> If you've already created a site, see [the docs for publishing to it](./basic.md) instead!
 
 ### Prerequisites
 
@@ -18,7 +18,7 @@ Then, click the `Create` button at the bottom of the page. If the site creation 
 
 Your site is now live on the web, and you can visit it!
 
-But, it's empty -- see [Publishing to a Site](./publishing.md) to get some stuff on there.
+But, it's empty -- see [Basic Publishing](./basic.md) to get some stuff on there.
 
 ### Configuring the Site
 
