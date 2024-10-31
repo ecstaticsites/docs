@@ -49,6 +49,16 @@ The content of those scripts depends on the site generator you've chosen to use!
 
 It's no problem to define additional scripts here -- for example, having one called `dev` is often nice for running a local development server.
 
+### Configuring the Site
+
+If your site has a build step, it's likely it renders the site in a child directory, for example `_site`.
+
+In this case, now's the time to tell Ecstatic about it! Go to the site's "settings" page in the [Ecstatic UI](https://app.ecstaticsites.org/#/sites), and in the "Index Path" field, enter where Ecstatic can find your site's `index.html` after the site has been built, for example the following:
+
+```
+/_site/index.html
+```
+
 ### Git Push
 
 Finally, you should commit the above changes and push to Ecstatic:
