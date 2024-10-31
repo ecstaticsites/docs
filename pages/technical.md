@@ -1,10 +1,26 @@
 # Technical Overview
 
-Please note that this page is **not required reading to know how to use Ecstatic** -- it is "just for fun", for developers who want to know what's running under the hood!
+> Please note that this page is **not required reading to know how to use Ecstatic** -- it is "just for fun", for developers who want to know what's running under the hood!
 
-The back-end of Ecstatic Sites is comprised of **one platform** supporting **four services**.
+### Design
 
-### The Platform
+The Ecstatic flow isn't very complicated. It involves a few services and a few databases:
+
+* You push your site's source code to Ecstatic
+* Ecstatic builds the site and uploads the result to the CDN
+* Visitors connect to the CDN to view your site
+* The CDN forwards access logs to Ecstatic's timeseries DB
+* The Ecstatic web app queries the timeseries DB for analytics
+
+This same flow can be seen in the chart below, for the more visually-oriented, with the yellow boxes representing Ecstatic services:
+
+<div style="display: flex; justify-content: center; margin-top: 24px; margin-bottom: 32px;">
+  <img src="assets/Ecstatic-3.drawio.png"/>
+</div>
+
+This design is the result of a lot of iteration, and I think it represents a "local maximum" in terms of ease of use and resilience. This is to say -- no part of Ecstatic going down will ever mean a visitor can't load an Ecstatic site, which is the most important thing.
+
+### Infrastructure
 
 Ecstatic is currently run entirely on one server, located in Germany and rented from [Hetzner](https://www.hetzner.com/). It does not use any cloud services, like load balancers or serverless functions.
 
@@ -14,7 +30,7 @@ All the rest of Ecstatic is run on this Kubernetes distribution and managed via 
 
 There are two "platform-level" services.
 
-* [Caddy](https://caddyserver.com/), which operates as the load balancer and reverse proxy. It procures certificates from [Let's Encrypt](https://letsencrypt.org/) and terminates SSL so the downstream services don't need to worry about it. All traffic, L4 and L7, flows through Caddy, and it's the only service exposed to the Internet.
+* [Caddy](https://caddyserver.com/), the load balancer and reverse proxy. It gets certificates from [Let's Encrypt](https://letsencrypt.org/) and terminates SSL so the downstream services don't need to worry about it. All traffic, L4 and L7, flows through Caddy, and it's the only service exposed to the Internet.
 * [Prometheus](https://prometheus.io/), which is our telemetry hub. Each pod exposes data on a `/metrics` endpoint, and this service scrapes those endpoints every few seconds, aggregates, stores, and graphs that data.
 
 The other services are custom Ecstatic code, written in Golang, and they can be found [here](https://github.com/ecstaticsites/go).
@@ -37,7 +53,7 @@ This is the service behind `git.ecstaticsites.com`, which pretends to be a Git s
 
 [View the code](https://github.com/ecstaticsites/go/tree/main/cmd/intake)
 
-This is the small data-processing pipeline. Bunny CDN forwards access logs to this service over UDP, where they are then parsed, lightly validated, and stored in Clickhouse on a per-site basis.
+This is the small data-processing pipeline. Bunny CDN forwards access logs to this service over TCP, where they are then parsed, lightly validated, and stored in Clickhouse on a per-site basis.
 
 ### Service 4: `query`
 
